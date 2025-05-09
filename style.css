@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    background: url('https://c4.wallpaperflare.com/wallpaper/734/908/32/lines-dark-pattern-sky-wallpaper-preview.jpg');
+    height: 100vh;
+    scroll-behavior: smooth;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Navbar */
+  .navbar {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  .navbar li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .logo span {
+    color: red;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .navbar li a::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: rgb(215, 39, 48);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s
+  }
+
+  .navbar li a:hover::after,
+  .navbar li a.active::after {
+    width: 100%;
+  }
+  
+  /* Home */
+  #home {
+    background: url('background.jpg') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+  }
+  .home-content h2{
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  #home span {
+    color: red;
+  }
+  
+  /* About */
+  #about {
+    
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 20px;
+    border-radius: 30% ;
+  }
+  
+  .about-info {
+    max-width: 600px;
+  }
+  
+  .about-buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .about-detail {
+    margin-top: 10px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Skills */
+  .skills-section {
+   
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .skills-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+  .skills-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  .skills-table td {
+    padding: 30px;
+    font-size: 1.1rem;
+    color: #fff;
+    text-align: center;
+  }
+  .skills-table i {
+    font-size: 2.5rem;
+    color: #f44336; /* red tone */
+    margin-bottom: 10px;
+  }
+  
+  /* Portfolio */
+  #portfolio {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .project-card {
+    display: inline-block;
+    margin: 15px;
+    width: 250px;
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  /* Contact */
+  #contact {
+    padding: 50px 20px;
+    background: #222;
+    color: white;
+    text-align: center;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+  }
+  
+  .social-icons button {
+    margin-top: 10px;
+    padding: 10px 20px;
+  }
+  

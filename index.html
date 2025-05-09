@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Priya Bhalerao | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="home-content">
+      
+      <h2>Hello , I'm <span>Priya Bhalerao</span></h2>
+      <h5>Java Developer / Web Developer</h5>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h1>About Me</h1>
+    <div class="about-container">
+      <img src="Linkdin profile.jpg" alt="Priya's photo" class="profile-img">
+      <div class="about-info">
+        <p>I’m a Computer Science Engineering graduate and a passionate Java and Web Developer. I love building backend systems and responsive websites. I focus on creating efficient, scalable solutions and continuously improving my skills. I build impactful and user-friendly application.</p>
+        <div class="about-buttons">
+          <button onclick="toggleSection('education')">Education</button>
+          <button onclick="toggleSection('experience')">Experience</button>
+        </div>
+        <div id="education" class="about-detail hidden">B.E. – Computer Engineering, Sinhagad COE, Pune</div>
+        <div id="experience" class="about-detail hidden">Web Development Intern – Elite Software</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="Skills" class="skills-section">
+    <h2>My Skills</h2>
+    <table class="skills-table">
+      <tr>
+        <td><i class="fab fa-java"></i><br>Java</td>
+        <td><i class="fab fa-html5"></i><br>HTML</td>
+        <td><i class="fab fa-css3-alt"></i><br>CSS</td>
+        <td><i class="fab fa-js"></i><br>JavaScript</td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-leaf"></i><br>Spring Boot</td>
+        <td><i class="fas fa-database"></i><br>H2/JSON DB</td>
+        <td><i class="fab fa-database"></i><br>MySQL</td>
+        <td><i class="fas fa-bootstrap"></i><br>Bootstrap</td>
+      </tr>
+      <tr>
+        <td><i class="fab fa-github"></i><br>GitHub</td>
+        <td><i class="fas fa-code"></i><br>RESTful APIs</td>
+        <td><i class="fas fa-laptop-code"></i><br>VS Code</td>
+        <td><i class="fas fa-tools"></i><br>IntelliJ IDEA</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h1>My Projects</h1>
+    <div class="portfolio-container">
+      <div class="project-card">
+        <!-- <img src="train-ticket.jpg" alt="Train Ticket Booking System"> -->
+        <p>Train Ticket Booking System </p>
+        <p>Tech Stack: Java, JSON (file storage)</p>
+      </div>
+      <div class="project-card">
+        <!-- <img src="student-management.jpg" alt="Student Management System"> -->
+        <p>Student Management API </p>
+        <p>Tech Stack: Spring Boot</p>
+      </div>
+      <div class="project-card">
+        <!-- <img src="portfolio-preview.jpg" alt="Portfolio Website"> -->
+        <p>Personal Portfolio Website </p>
+        <p>Tech Stack: HTML, CSS, JS</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h1>Contact Me</h1>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <input type="tel" placeholder="Phone Number">
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/priya-bhalerao" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/priya-1416" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="PRIYA_BHALERAO_RESUME (2).pdf" download><button>Download CV</button></a>
+    </div>
+  </section>
+
+</body>
+</html>
